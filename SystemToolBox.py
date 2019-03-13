@@ -14,7 +14,8 @@ while True:
     except ValueError:
         print('please input your options again')
         choose = input('your options is: ')
-    if choose == 1:
-        
-    elif choose == 'exit':
-        os._exit(0)
+    finally:
+        if choose == 1:
+            pass
+        elif choose == 'exit':
+            os._exit(0)
