@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.7.2
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: sudo pip install --upgrade pip
+      - run: sudo pip install -r requirements.txt
